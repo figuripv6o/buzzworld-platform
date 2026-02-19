@@ -1,1 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>BuzzWorld Structured Insight™</title>
+
+<style>
+
+body {
+
+background: #0a0f1f;
+color: white;
+font-family: Arial, sans-serif;
+margin: 0;
+text-align: center;
+
+}
+
+header {
+
+padding: 40px;
+background: linear-gradient(90deg,#0a0f1f,#162447);
+
+}
+
+h1 {
+
+font-size: 36px;
+margin-bottom: 10px;
+
+}
+
+.status {
+
+color: #00ff88;
+font-size: 16px;
+
+}
+
+.billboard {
+
+margin-top: 20px;
+
+}
+
+.billboard img {
+
+width: 95%;
+max-width: 1200px;
+border-radius: 12px;
+box-shadow: 0 0 40px rgba(77,163,255,0.4);
+
+}
+
+.menu {
+
+margin-top: 30px;
+
+}
+
+button {
+
+padding: 15px 30px;
+margin: 10px;
+font-size: 18px;
+background: #4da3ff;
+border: none;
+color: white;
+border-radius: 8px;
+cursor: pointer;
+
+}
+
+button:hover {
+
+background: #00ffd0;
+color: black;
+
+}
+
+.section {
+
+padding: 40px;
+
+}
+
+.footer {
+
+margin-top: 40px;
+padding: 20px;
+background: #162447;
+color: #aaa;
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>BuzzWorld Structured Insight™</h1>
+
+<div class="status">
+● LIVE STRUCTURAL TELEMETRY ACTIVE
+</div>
+
+</header>
+
+<div class="billboard">
+
+<img id="billboard"
+src="https://via.placeholder.com/1200x600.gif?text=BuzzWorld+Authority+Graph">
+
+</div>
+
+<div class="menu">
+
+<button onclick="location.href='dashboard/'">
+Launch Dashboard
+</button>
+
+<button onclick="location.href='services/'">
+Services
+</button>
+
+<button onclick="location.href='pricing/'">
+Pricing
+</button>
+
+<button onclick="location.href='buzzgpt/'">
+BuzzGPT Assistant
+</button>
+
+</div>
+
+<div class="section">
+
+<h2>Platform Features</h2>
+
+<p>
+
+Structured Insight Analytics  
+<br>
+Device-aligned telemetry monitoring  
+<br>
+Real-time authority graph visualization  
+<br>
+AI-assisted analytics with BuzzGPT  
+<br>
+Cross-platform dashboard integration  
+
+</p>
+
+</div>
+
+<div class="section">
+
+<h2>Revenue & Growth Model</h2>
+
+<p>
+
+Subscription licensing  
+<br>
+Telemetry analytics services  
+<br>
+AI-assisted operational intelligence  
+<br>
+Enterprise dashboard deployment  
+
+</p>
+
+</div>
+
+<div class="footer">
+
+BuzzWorld Structured Insight™  
+<br>
+Authority Doctrine ADR-0002 Active  
+<br>
+Owner: figuripv6o  
+
+</div>
+
+<script>
+
+const billboardFrames = [
+
+"https://via.placeholder.com/1200x600.gif?text=Authority+Graph",
+
+"https://via.placeholder.com/1200x600.gif?text=Telemetry+Dashboard",
+
+"https://via.placeholder.com/1200x600.gif?text=Integrity+Monitoring",
+
+"https://via.placeholder.com/1200x600.gif?text=BuzzGPT+Assistant"
+
+];
+
+let currentFrame = 0;
+
+setInterval(function(){
+
+currentFrame = (currentFrame + 1) % billboardFrames.length;
+
+document.getElementById("billboard").src =
+billboardFrames[currentFrame];
+
+}, 4000);
+
+</script>
+
+</body>
+
+</html>
